@@ -5,7 +5,7 @@ const ThemeContext = createContext(null);
 
 export default function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(
-    window.localStorage.getItem("theme") || "dark"
+    "dark"
   );
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
