@@ -5,7 +5,7 @@ const ThemeContext = createContext(null);
 
 export default function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(
-    (localStorage.getItem("theme")) || "dark"
+    window.localStorage.getItem("theme") || "dark"
   );
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -13,16 +13,16 @@ export default function ThemeProvider({ children }) {
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", theme);
+      window.localStorage.setItem("theme", theme);
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", theme);
+       window.localStorage.setItem("theme", theme);
     }
   }, [theme]);
 
   useEffect(() => {
     if (
-      localStorage.theme === "dark" ||
+      window.localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
