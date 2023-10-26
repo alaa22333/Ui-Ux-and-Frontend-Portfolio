@@ -16,7 +16,7 @@ const SideBar = () => {
       variants={sideBarVariants}
       initial={isOpen ? "hidden" : "show"}
       whileInView={isOpen ? "show" : "hidden"}
-      className=" w-1/2 h-[120vh] drop-shadow-lg     rounded-xl  bg-black/60 shadow-black/[0.01]  p-5   absolute  flex flex-col  -right-1 -top-1 shadow "
+      className=" w-[300px]h-[120vh] drop-shadow-lg     rounded-xl  bg-black/60 shadow-black/[0.01]  p-5   absolute  flex flex-col  -right-1 -top-1 shadow "
     >
       <div className={`${styles.itemsBetween}  `}>
         <Image src={logo} className=" text-left  w-[100px]" alt="image"></Image>
