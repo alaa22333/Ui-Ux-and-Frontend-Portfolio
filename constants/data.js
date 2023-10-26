@@ -1,4 +1,4 @@
-import { GrMail } from "react-icons/Gr";
+import { SiGmail } from "react-icons/si";
 import { MdLocationOn } from "react-icons/md";
 
 import { FaUserAlt } from "react-icons/fa";
@@ -43,7 +43,7 @@ export const links = [
   { title: "About", hash: "#about", icon: FaUserAlt },
   { title: "Skills", hash: "#skills", icon: IoMdCreate },
   { title: "Services", hash: "#services", icon: AiOutlineFundProjectionScreen },
-  { title: "Contact", hash: "#contact", icon: GrMail },
+  { title: "Contact", hash: "#contact", icon: SiGmail },
 ];
 
 export const socialIcons = [

@@ -62,7 +62,9 @@ const Hero = () => {
               {" "}
               <div className="btn rounded-xl text-center  ">
                 <Link
-                  href={""}
+                  href={
+                    "https://drive.google.com/file/d/1vlXlLNUtOOxyqIg-RH6HKELd03Qt9stg/view?usp=sharing"
+                  }
                   target="_blank"
                   className="  text-sm md:text-lg  "
                 >
@@ -71,7 +73,7 @@ const Hero = () => {
               </div>
               <div className="  border border-2  btn bg-transparent text-center  ">
                 <Link
-                  href={""}
+                  href="https://www.upwork.com/freelancers/~0188ad3869bf99649f"
                   target="_blank"
                   className=" text-white   text-sm md:text-lg  "
                 >
@@ -79,7 +81,12 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
-            <Image src={arrow} width={100} className="w-[60px] md:w-[100px]" alt="arrow"></Image>
+            <Image
+              src={arrow}
+              width={100}
+              className="w-[60px] md:w-[100px]"
+              alt="arrow"
+            ></Image>
           </div>
           <div className={`${Styles.itemsBetween}  mt-7 gap-10 `}>
             {socialIcons.map((item, i) => {
@@ -110,7 +117,6 @@ const Hero = () => {
           >
             <Image src={hero} alt="image" width={530}></Image>
           </motion.div>
-         
         </motion.div>
       </motion.div>
     </section>
