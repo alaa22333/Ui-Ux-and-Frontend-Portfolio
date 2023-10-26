@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+@layer components {
+  * {
+    @apply p-0 m-0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: Open Sans, sans-serif;
+    background-color: #b5adb6b3;
+  }
+
+  .main-gradient {
+    @apply md:w-[300px] h-[300px] w-[200px] rounded-full absolute -z-10;
+    background-image: linear-gradient(
+      500deg,
+      #e4b942c8,
+      #7a3692c7,
+      #8d5496,
+      #6f71b6d8,
+      #387986,
+      #a4295c
+    );
+    filter: blur(20px);
+    -webkit-filter: blur(120px);
+  }
+
+  .btn {
+    @apply text-main px-2 md:py-3 py-2 justify-center  whitespace-nowrap  flex  md:w-[230px] w-[120px] md:text-lg text-sm font-semibold   bg-white  shadow-white/50 hover:backdrop-blur-[.2rem] hover:bg-white/80 hover:shadow-sm drop-shadow-md backdrop-blur-[4rem] shadow-lg  rounded-xl;
+  }
+  .shadow {
+    fill: rgba(254, 254, 254, 0.11);
+    filter: drop-shadow(8px 6px 4px rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(8px 6px 4px rgba(0, 0, 0, 0.25));
+  }
+  .text-gradient {
+    background: linear-gradient(
+      -200deg,
+      #244081c7 0%,
+      #ce6eae 47.71%,
+     #ba2f9c 29%,
+      rgba(42, 173, 173, 0.727) 69.58%,
+      #752482 82.07%,
+    
+      #b31c58 95.62%,
+      rgba(200, 131, 48, 0.96) 99.99%,
+      rgba(29, 104, 80, 0.815) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-dark {
+    background: linear-gradient(
+      -200deg,
+      #0f98c2ca 0%,
+     #ba2f9c 29%,
+      rgba(19, 248, 202, 0.745) 62.29%,
+      
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title {
+    @apply text-gradient text-lg tracking-widest font-extrabold;
+  }
+  .text-small {
+    @apply md:text-sm text-lg leading-6 text-white/70 tracking-wide;
+  }
+  .btn-width {
+    width: 200px;
+  }
+  .input {
+    @apply rounded-xl outline-offset-1  outline-main  p-3  h-[40px]  md:min-w-[290px];
+  }
+  .service-btn {
+    @apply bg-main shadow-lg  font-semibold text-white;
+  }
+  .Toastify__progress-bar-theme--colored.Toastify__progress-bar--info {
+    background-color: rgba(141, 84, 150, 1) !important;
+  }
+  .glob {
+    color: white !important;
+  }
+}
