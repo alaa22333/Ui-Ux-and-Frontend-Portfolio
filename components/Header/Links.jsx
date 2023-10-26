@@ -29,8 +29,8 @@ const Links = () => {
           }  
        
            ${
-             isOpen && !isMatch && "flex gap-3 items-center  px-3"
-           } tracking-widest  md:text-[16px] hover:text-main/90  `}
+             isOpen && !isMatch && "flex gap-3 items-center py-2 px-3"
+           } tracking-widest  md:text-[16px] hover:text-main/90   `}
         >
           {isOpen && !isMatch && <Icon className="text-main text-lg" />}
           {title}

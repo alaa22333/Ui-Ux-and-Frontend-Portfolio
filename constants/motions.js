@@ -22,26 +22,27 @@ export  const navVariants = {
   },
 };
 export const sideBarVariants = {
-  hidden: {
-    opacity: 0,
-    x: 300,
-    transition: {
-      type: "tween",
-      duration: .5,
-      ease: "easeIn",
  
+    hidden: {
+      opacity: 0,
+      x: 50,
+      transition: {
+        type: "tween",
+        stiffness: 300,
+        damping: 140,
+        delay: 1,
+      },
     },
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "tween",
-      ease: "easeIn",
-      duration: .5,
+    show: {
+      opacity: 1,
+      x:0,
+      transition: {
+        type: "tween",
+        stiffness: 80,
+        delay: 0.5,
+      },
     },
-  },
-};
+  };
 
   export const textVariant = (delay) => ({
     hidden: {

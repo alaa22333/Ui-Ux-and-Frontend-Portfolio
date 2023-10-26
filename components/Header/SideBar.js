@@ -14,12 +14,12 @@ const SideBar = () => {
   return (
     <motion.div
       variants={sideBarVariants}
-      initial={ "hidden" }
-      whileInView={ "show"}
-      className="w-[300px]  h-[120vh] drop-shadow-lg  border   rounded-xl  bg-white/40 shadow-black/[0.01]  p-5   absolute  flex flex-col  -right-1 -top-1 shadow "
+      initial={isOpen ? "hidden" : "show"}
+      whileInView={isOpen ? "show" : "hidden"}
+      className=" w-1/2 h-[120vh] drop-shadow-lg     rounded-xl  bg-black/60 shadow-black/[0.01]  p-5   absolute  flex flex-col  -right-1 -top-1 shadow "
     >
       <div className={`${styles.itemsBetween}  `}>
-        <Image src={logo} className=" text-left  w-[70px]" alt="image"></Image>
+        <Image src={logo} className=" text-left  w-[100px]" alt="image"></Image>
         {/* close btn */}
         <button
           title="btn"
@@ -28,7 +28,7 @@ const SideBar = () => {
             setIsOpen(!isOpen);
           }}
         >
-          <AiOutlineClose className=" h-5 w-5 z-20 text-main" />
+          <AiOutlineClose className=" h-5 w-5 z-20 text-white" />
         </button>
         {/* links */}
       </div>
