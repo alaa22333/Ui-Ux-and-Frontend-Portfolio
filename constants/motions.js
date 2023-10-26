@@ -27,9 +27,9 @@ export const sideBarVariants = {
     x: 300,
     transition: {
       type: "tween",
-      duration: 1,
+      duration: .5,
       ease: "easeIn",
-      delay:.3,
+ 
     },
   },
   show: {
@@ -38,7 +38,7 @@ export const sideBarVariants = {
     transition: {
       type: "tween",
       ease: "easeIn",
-      duration: 1,
+      duration: .5,
     },
   },
 };

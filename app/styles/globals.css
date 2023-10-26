@@ -5,7 +5,7 @@
 
 @layer components {
   * {
-    @apply p-0 m-0 transition duration-300;
+    @apply p-0 m-0 transition-colors duration-300;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
