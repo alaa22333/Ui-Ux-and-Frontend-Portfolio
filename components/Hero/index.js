@@ -28,11 +28,11 @@ const Hero = () => {
         whileInView="show"
         onViewportEnter={() => setSelectedPage("Home")}
         viewport={{ once: true }}
-        className={`   md:${Styles.itemsBetween}   md:flex-row flex flex-col  md:gap-10  `}
+        className={`   md:${Styles.itemsBetween}   md:flex-row flex flex-col   md:gap-10  `}
       >
         <motion.div
-          className={` items-start flex flex-col  text-white/70 gap-2 md:w-[60%] justify-start w-full `}
-          variants={fadeIn("left", "tween", 0.4, 1)}
+          className={` items-start flex flex-col  text-white/70 gap-5 md:w-[60%] justify-start w-full `}
+          variants={fadeIn("left", "tween", 0.25, 1)}
         >
           <h1 className="title  dark:text-dark ">Hello There !</h1>
           <div className="md:text-[32px] text-[20px]   ">
@@ -57,7 +57,7 @@ const Hero = () => {
             textStyles={"text-small  text-sm md:text-lg"}
           />
 
-          <div className={`${Styles.itemsCenter} md:gap-9  gap-4 mt-4  `}>
+          <div className={`${Styles.itemsCenter} md:gap-9  gap-4 mt-2  `}>
             <div className="flex flex-row md:gap-5 gap-2 items-center">
               {" "}
               <div className="btn rounded-xl text-center  ">
@@ -89,7 +89,7 @@ const Hero = () => {
             ></Image>
           </div>
           <div
-            className={`${Styles.itemsBetween}  md:mt-3 mt-5 md:gap-6 gap-4 `}
+            className={`${Styles.itemsBetween}  mt-5  md:gap-6 gap-4 `}
           >
             {socialIcons.map((item, i) => {
               const { icon: Icon, href } = item;
@@ -100,7 +100,7 @@ const Hero = () => {
                   key={i}
                   className="bg-white/10 hover:backdrop-blur-[.2rem] hover:shadow-none drop-shadow-md backdrop-blur-[4rem] shadow-lg    rounded-full p-2"
                 >
-                  <Icon className="text-secondary hover:text-secondary/50  text-2xl md:text-3xl " />
+                  <Icon className=" text-secondary hover:text-secondary/50  text-2xl md:text-3xl " />
                 </Link>
               );
             })}
@@ -108,7 +108,7 @@ const Hero = () => {
         </motion.div>
         {/* right sec */}
         <motion.div
-          variants={fadeIn("right", "tween", 0.6, 1)}
+          variants={fadeIn("right", "tween", 0.25, 1)}
           className=" relative md:mt-0 mt-10"
         >
           <motion.div

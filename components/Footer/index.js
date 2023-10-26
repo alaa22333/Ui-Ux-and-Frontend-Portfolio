@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col   gap-7 bg-white/30  py-7 md:px-md px-x">
+    <div className="flex flex-col   gap-7 dark:bg-white/60 bg-white/30  py-7 md:px-md px-x">
       {/* above */}
       <div className="flex md:flex-row  items-center w-full flex-col justify-between  gap-6 md:gap-0  ">
         <div className="flex flex-col    md:gap-7 gap-4 ">
@@ -26,19 +26,19 @@ const Footer = () => {
 shadow-sm "
                   target="_blank"
                 >
-                  <item.icon className="text-secondary text-2xl  hover:text-secondary/50     " />
+                  <item.icon className="text-main text-2xl  hover:text-main/50     " />
                 </Link>
               );
             })}
           </div>
         </div>
-        <div className="flex flex-wrap justify-center  md:gap-5 w-full gap-y-2 gap-x-4 md:w-[70%]">
+        <div className="flex flex-wrap justify-center font-semibold  md:gap-5 w-full gap-y-2 gap-x-4 md:w-[70%]">
           {links.map((ele, i) => {
             return (
               <Link
                 href={ele.hash}
                 key={i}
-                className="tracking-widest my-0  hover:text-main/90 text-sm md:text-lg  hover:underline dark:text-white text-grey500"
+                className="tracking-widest my-0  font-medium  hover:text-main text-sm md:text-lg  dark:hover:text-main hover:underline dark:text-white text-grey500"
               >
                 {ele.title}
               </Link>
@@ -52,7 +52,7 @@ shadow-sm "
         <hr className="w-[30%] border-white/40  " />
         <p className=" text-sm md:text-lg  text-grey200">
           © 2023
-          <span className=" text-main  w-[40%]  "> Alaa Abdelrasoul.</span> All
+          <span className=" text-main/80 font-semibold  w-[40%]  "> Alaa Abdelrasoul.</span> All
           rights reserved.
         </p>
         <hr className="w-[30%]  border-white/40 " />
