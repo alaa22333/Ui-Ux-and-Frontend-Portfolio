@@ -2,10 +2,11 @@ import "./styles/globals.css";
 import { Roboto } from "next/font/google";
 import ContextProvider from "@/context/main-context";
 import NavBar from "@/components/Header";
-import ThemeProvider from "@/context/theme-context";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Suspense } from "react";
 import Loading from "./loading";
+import Providers from "./Providers";
+
 const roboto = Roboto({
   weight: '400',
   subsets: ['latin'],
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
         className={`  bg-[ #b5adb6b3]  dark:bg-black  overflow-x-hidden   pt-28 ${roboto.className}`}
       >
         <ContextProvider>
-          <ThemeProvider>
+          <Providers>
             <Suspense fallback={<Loading />}>
               <div className="main-gradient left-0 top-1/2 opacity-100  dark:opacity-0" />
               <div className="main-gradient left-0 top-0 opacity-100  dark:opacity-0 " />
@@ -39,7 +40,7 @@ export default function RootLayout({ children }) {
               {children}
               <ThemeToggle />{" "}
             </Suspense>
-          </ThemeProvider>
+          </Providers>
         </ContextProvider>
       </body>
     </html>

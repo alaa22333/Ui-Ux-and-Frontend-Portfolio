@@ -20,13 +20,13 @@ const Services = () => {
     <motion.main
       id="services"
       className={`px-x md:px-md    scroll-mt-40  md:my-32 my-12 `}
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
     >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         onViewportEnter={() => setSelectedPage("Services")}
       >
         <TitleWithImage
@@ -37,11 +37,11 @@ const Services = () => {
         />
       </motion.div>
       <div
-        className={`md:w-[280px] w-[200px] gap-3 flex md:text-lg text-sm bg-white  my-10 mt-20 mx-auto  `}
+        className={`md:w-[280px] w-[200px] gap-3 flex md:text-lg text-sm rounded-lg bg-white  my-10 mt-20 mx-auto  `}
       >
         <button
           className={` text-center p-2  font-semibold duration-500 transition ${
-            query === "design" ? "service-btn" : " text-black"
+            query === "design" ? "service-btn rounded-lg" : " text-black"
           } `}
           onClick={() => {
             setQuery("design");
@@ -59,7 +59,7 @@ const Services = () => {
           }}
           className={`text-center p-2 font-semibold  duration-500 transition   flex-1 
         
- ${query === "develop" ? "service-btn" : " text-black"}`}
+ ${query === "develop" ? "service-btn rounded-lg" : " text-black"}`}
         >
           Web Development
         </button>

@@ -19,16 +19,16 @@ const Sponsors = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`md:my-20 my-10  w-full   -skew-y-2 `}
     >
-      <div className="flex  md:justify-evenly justify-center gap-2 md:py-2 py-5 items-center bg-main/10 shadow  w-full mx-auto rounded-xl flex-wrap">
+      <div className="flex  md:justify-evenly justify-center gap-2 md:py-2 py-4 items-center bg-main/10 shadow  w-full mx-auto rounded-xl flex-wrap">
         {images.map((ele, i) => {
           const { img, alt } = ele;
 
           return (
             <motion.div key={i} variants={fadeIn("down", "spring", 0.4 * i, 1)}>
-              <Image className="md:w-[150px] w-[90px]" src={img} alt={alt} />
+              <Image className="md:w-[150px] w-[60px]" src={img} alt={alt} />
             </motion.div>
           );
         })}

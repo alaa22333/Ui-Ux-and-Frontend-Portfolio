@@ -164,7 +164,7 @@ export const projects = {
     },
     {
       img: fashion,
-      name: "Women'clothing E-commerce app",
+      name: "Women 's clothing E-commerce app",
       description:
         "A fashion app that helps women to order online and track their orders.",
 
@@ -186,7 +186,7 @@ export const projects = {
     },
     {
       img: fitness,
-      name: "fitness landing page",
+      name: "Fitness landing page",
       description:
         "A fitness landing page that encourages people to be fit and join the community of fitness people.",
       behance: "https://www.behance.net/gallery/183087121/Fitness-landing-page",
@@ -195,3 +195,4 @@ export const projects = {
     },
   ],
 };
+

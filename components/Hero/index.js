@@ -27,15 +27,15 @@ const Hero = () => {
         initial="hidden"
         whileInView="show"
         onViewportEnter={() => setSelectedPage("Home")}
-        viewport={{ once: false, amount: 0.25 }}
-        className={`   md:${Styles.itemsBetween}   md:flex-row flex flex-col gap-5  `}
+        viewport={{ once: true, amount: 0.25 }}
+        className={`   md:${Styles.itemsBetween}   md:flex-row flex flex-col  md:gap-10  `}
       >
         <motion.div
-          className={` items-start flex flex-col  text-white/70 md:w-1/2 w-full `}
+          className={` items-start flex flex-col  text-white/70 gap-2 md:w-[60%] justify-start w-full `}
           variants={fadeIn("left", "tween", 0.4, 1)}
         >
-          <h1 className="title py-1 dark:text-dark ">Hello There !</h1>
-          <div className="md:text-[32px] text-[20px] py-2 ">
+          <h1 className="title  dark:text-dark ">Hello There !</h1>
+          <div className="md:text-[32px] text-[20px]   ">
             I’m Alaa Ahmed
             <TypingText
               title={"Frontend Developer"}
@@ -54,10 +54,10 @@ const Hero = () => {
             title={
               " I like building new things and creating impressive designs and develop them into code .I worked on Many projects as a developer using most recent Technologies."
             }
-            textStyles={"text-small py-4 text-sm md:text-lg"}
+            textStyles={"text-small  text-sm md:text-lg"}
           />
 
-          <div className={`${Styles.itemsCenter} md:gap-9  gap-4 mt-4   `}>
+          <div className={`${Styles.itemsCenter} md:gap-9  gap-4 mt-4  `}>
             <div className="flex flex-row md:gap-5 gap-2 items-center">
               {" "}
               <div className="btn rounded-xl text-center  ">
@@ -71,7 +71,7 @@ const Hero = () => {
                   Download CV
                 </Link>
               </div>
-              <div className="  border border-2  btn bg-transparent text-center  ">
+              <div className="  border border-2 hover:bg-transparent  btn bg-transparent text-center  ">
                 <Link
                   href="https://www.upwork.com/freelancers/~0188ad3869bf99649f"
                   target="_blank"
@@ -88,7 +88,9 @@ const Hero = () => {
               alt="arrow"
             ></Image>
           </div>
-          <div className={`${Styles.itemsBetween}  mt-7 gap-10 `}>
+          <div
+            className={`${Styles.itemsBetween}  md:mt-3 mt-5 md:gap-6 gap-4 `}
+          >
             {socialIcons.map((item, i) => {
               const { icon: Icon, href } = item;
 
@@ -98,7 +100,7 @@ const Hero = () => {
                   key={i}
                   className="bg-white/10 hover:backdrop-blur-[.2rem] hover:shadow-none drop-shadow-md backdrop-blur-[4rem] shadow-lg    rounded-full p-2"
                 >
-                  <Icon className="text-main hover:text-main/80  text-2xl md:text-3xl " />
+                  <Icon className="text-secondary hover:text-secondary/50  text-2xl md:text-3xl " />
                 </Link>
               );
             })}
@@ -111,11 +113,17 @@ const Hero = () => {
         >
           <motion.div
             variants={rotateVariants("right")}
-            viewport={{ once: false, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.25 }}
             initial="hidden"
             whileInView="show"
           >
-            <Image src={hero} alt="image" width={530}></Image>
+            <Image
+              loading="eager"
+              priority={true}
+              src={hero}
+              alt="image"
+              width={530}
+            ></Image>
           </motion.div>
         </motion.div>
       </motion.div>

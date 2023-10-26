@@ -23,7 +23,7 @@ const About = () => {
       initial="hidden"
       whileInView="show"
       onViewportEnter={() => setSelectedPage("About")}
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
     >
       <div className={`${Styles.itemsCenter} `}>
         <TitleWithImage title="About" />
@@ -31,26 +31,37 @@ const About = () => {
 
       {/* left */}
       <div
-        className={` ${Styles.itemsBetween}  md:gap-20 md:flex-row flex-col md:mt-16  mt-6   `}
+        className={` ${Styles.itemsBetween}  md:gap-20 md:flex-row flex-col md:mt-16  mt-7   `}
       >
         <motion.div
           variants={zoomIn(0.4, 1)}
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
         >
-          <Image alt="image" src={aboutGirl} width={400} height={300} />
+          <Image
+            loading="eager"
+            priority={true}
+            alt="image"
+            src={aboutGirl}
+            width={400}
+            height={300}
+          />
         </motion.div>
 
         {/* right */}
         <motion.div
           variants={fadeIn("up", "spring", 1, 1.3)}
-          className="flex flex-col md:w-1/2 w-full md:gap-6 gap-2 "
+          className="flex flex-col md:w-1/2 w-full md:gap-6 gap-4 "
         >
-          <p className="md:text-xl dark:text-grey400  text-grey500/70 text-lg w-[90%]  font-medium">
-            I am skilled in all aspects of the design process, from user
-            research and wireframing to prototyping and implementation. I am
-            also proficient in a variety of front-end development technologies,
-            using Modern frameworks.
+          <p className="md:text-xl dark:text-grey400  text-grey500/70 text-lg  md:w-[90%] w-full  font-medium">
+            I am skilled in all aspects of the{" "}
+            <span className=" font-semibold"> design process </span>, from{" "}
+            <span className=" font-semibold"> user research </span>
+            and wireframing to
+            <span className=" font-semibold"> prototyping </span> and
+            implementation. I am also proficient in a variety of front-end
+            development technologies, using Modern frameworks.
           </p>
 
           <hr className="text-main w-[70%] " />
@@ -74,7 +85,7 @@ const About = () => {
           <Link
             target="_blank"
             href="https://www.upwork.com/freelancers/~0188ad3869bf99649f"
-            className="btn   text-center text-main "
+            className="btn  my-4  text-center text-main "
           >
             Hire Me
           </Link>

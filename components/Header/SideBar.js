@@ -5,7 +5,7 @@ import { sideBarVariants } from "@/constants/motions";
 import { AiOutlineClose } from "react-icons/ai";
 import Links from "./Links";
 import Image from "next/image";
-import logo from "@/public/assets/logo.svg";
+import logo from "@/public/assets/logo2.svg";
 import styles from "@/app/styles/styles";
 import { useMainContext } from "@/context/main-context";
 const SideBar = () => {

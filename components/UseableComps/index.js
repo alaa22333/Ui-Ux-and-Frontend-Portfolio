@@ -2,7 +2,7 @@ import { fadeIn, textContainer, textVariant2 } from "@/constants/motions";
 import Styles from "@/app/styles/styles";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import { ThemeProvider } from "next-themes";
 export const TitleText = ({ title, textStyles }) => {
   return (
     <motion.h2
@@ -58,3 +58,7 @@ export const TitleWithImage = ({
     </div>
   );
 };
+
+
+
+

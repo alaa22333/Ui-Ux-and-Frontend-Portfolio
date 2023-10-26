@@ -18,7 +18,7 @@ const Skills = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       onViewportEnter={() => setSelectedPage("Skills")}
       className={`px-x md:px-md scroll-mt-32 md:my-32 my-12 `}
     >
@@ -29,7 +29,7 @@ const Skills = () => {
         direction={"right"}
       />
 
-      <div className={`${Styles.itemsCenter} flex-wrap gap-6 md:mt-20 mt-10`}>
+      <div className={`${Styles.itemsCenter} flex-wrap gap-4 md:gap-6 md:mt-20 mt-10`}>
         {skills.map((ele, i) => {
           const { image, skill } = ele;
           return (
@@ -38,7 +38,7 @@ const Skills = () => {
               variants={fadeIn("down", "spring", i * 0.5, 0.25)}
             >
               <Image
-                className="md:w-[120px] w-[100px]"
+                className="md:w-[120px] w-[60px] rounded-full"
                 src={image}
                 alt={skill}
               />

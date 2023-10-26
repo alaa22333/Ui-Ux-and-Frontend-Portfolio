@@ -22,18 +22,18 @@
     background-image: linear-gradient(
       500deg,
       #e4b942c8,
-      #7a3692c7,
-      #8d5496,
+       #ce6eae 47.71%,
+     #ba2f9c 29%,
       #6f71b6d8,
       #387986,
       #a4295c
     );
     filter: blur(20px);
-    -webkit-filter: blur(120px);
+    -webkit-filter: blur(150px);
   }
 
   .btn {
-    @apply text-main px-2 md:py-3 py-2 justify-center  whitespace-nowrap  flex  md:w-[230px] w-[120px] md:text-lg text-sm font-semibold   bg-white  shadow-white/50 hover:backdrop-blur-[.2rem] hover:bg-white/80 hover:shadow-sm drop-shadow-md backdrop-blur-[4rem] shadow-lg  rounded-xl;
+    @apply text-main px-2  md:py-3 py-2 justify-center  whitespace-nowrap  flex  md:w-[200px] w-[120px] md:text-lg text-sm font-bold   bg-white  shadow-white/50 hover:backdrop-blur-[.2rem] hover:bg-white/80 hover:shadow-sm drop-shadow-md backdrop-blur-[4rem] shadow-lg  rounded-xl;
   }
   .shadow {
     fill: rgba(254, 254, 254, 0.11);
@@ -44,14 +44,13 @@
     background: linear-gradient(
       -200deg,
       #244081c7 0%,
-      #ce6eae 47.71%,
+      #ce6eae ,
      #ba2f9c 29%,
-      rgba(42, 173, 173, 0.727) 69.58%,
+      rgba(20, 160, 160, 0.8) 69.58%,
       #752482 82.07%,
     
-      #b31c58 95.62%,
-      rgba(200, 131, 48, 0.96) 99.99%,
-      rgba(29, 104, 80, 0.815) 100%
+      #b31c58 95.62%
+    
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -60,7 +59,9 @@
   .text-dark {
     background: linear-gradient(
       -200deg,
-      #0f98c2ca 0%,
+      #ba2f9c 29%,
+      rgba(20, 160, 160, 0.8) 69.58%,
+      #752482 82.07%,
      #ba2f9c 29%,
       rgba(19, 248, 202, 0.745) 62.29%,
       

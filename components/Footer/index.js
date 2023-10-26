@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col  gap-10 bg-white/30  py-10 md:px-md px-x">
+    <div className="flex flex-col  gap-4 bg-white/30  py-5 md:px-md px-x">
       {/* above */}
-      <div className="flex md:flex-row  items-center w-full flex-col justify-between gap-10 ">
-        <div className="flex flex-col   gap-4 ">
+      <div className="flex md:flex-row  items-center w-full flex-col justify-between  gap-6 md:gap-0  ">
+        <div className="flex flex-col    md:gap-7 gap-4 ">
           <Image alt="logo" width={140} src={logo} />
-          <p className="text-sm md:text-lg text-grey300 w-[80%]">
+          <p className="text-sm md:text-lg text-grey300 md:w-[80%] w-full">
             I like building new things and creating impressive designs and
             develop them into code .I worked on Many projects as a developer
             using most recent Technologies.
@@ -22,23 +22,23 @@ const Footer = () => {
                 <Link
                   href={item.href}
                   key={i}
-                  className="w-[20px] h-[20px] rounded-full
+                  className="w-[16px] h-[16px] rounded-full
 shadow-sm "
                   target="_blank"
                 >
-                  <item.icon className="text-grey500 text-3xl  hover:text-grey500/50     " />
+                  <item.icon className="text-grey500 text-2xl  hover:text-grey500/50     " />
                 </Link>
               );
             })}
           </div>
         </div>
-        <div className="flex flex-wrap  gap-8  md:w-[70%]">
+        <div className="flex flex-wrap justify-center  md:gap-5 w-full gap-y-2 gap-x-4 md:w-[70%]">
           {links.map((ele, i) => {
             return (
               <Link
                 href={ele.hash}
                 key={i}
-                className="tracking-widest  hover:text-main/90 text-sm md:text-lg  hover:underline text-white"
+                className="tracking-widest my-0  hover:text-main/90 text-sm md:text-lg  hover:underline text-white"
               >
                 {ele.title}
               </Link>
@@ -50,13 +50,10 @@ shadow-sm "
 
       <div className="flex gap-5 items-center mx-auto w-full text-center justify-evenly">
         <hr className="w-[30%] border-white/40  " />
-        <p className="text-small  text-white">
+        <p className=" text-sm md:text-lg  text-white">
           © 2023
-          <span className=" text-main  w-[40%]  ">
-            {" "}
-            Alaa Abdelrasoul.
-          </span>{" "}
-          All rights reserved.
+          <span className=" text-main  w-[40%]  "> Alaa Abdelrasoul.</span> All
+          rights reserved.
         </p>
         <hr className="w-[30%]  border-white/40 " />
       </div>

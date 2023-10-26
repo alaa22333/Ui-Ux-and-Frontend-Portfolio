@@ -15,9 +15,9 @@ const Contact = () => {
   const { setSelectedPage } = useMainContext();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let email = (e.target.email.value);
-    let name = (e.target.userName.value);
-    let message = (e.target.message.value);
+    let email = e.target.email.value;
+    let name = e.target.userName.value;
+    let message = e.target.message.value;
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -52,14 +52,17 @@ const Contact = () => {
     }
   };
   return (
-    <section className=" md:px-md px-x my-40 scroll-mt-24 " id="contact">
+    <section
+      className=" md:px-md px-x md:my-32 my-12 scroll-mt-24 "
+      id="contact"
+    >
       <motion.main
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         onViewportEnter={() => {
-          setSelectedPage('Contact');
+          setSelectedPage("Contact");
         }}
       >
         <TitleWithImage title={"Contact"} />
@@ -101,7 +104,7 @@ const Contact = () => {
               <input
                 placeholder="Enter Your Email"
                 className="input  placeholder:text-slate-300"
-               type=" email"
+                type=" email"
                 id="email"
                 name="email"
               />
