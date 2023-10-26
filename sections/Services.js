@@ -20,13 +20,13 @@ const Services = () => {
     <motion.main
       id="services"
       className={`px-x md:px-md    scroll-mt-40  md:my-32 my-12 `}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true }}
     >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true }}
         onViewportEnter={() => setSelectedPage("Services")}
       >
         <TitleWithImage

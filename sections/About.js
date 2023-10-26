@@ -23,7 +23,7 @@ const About = () => {
       initial="hidden"
       whileInView="show"
       onViewportEnter={() => setSelectedPage("About")}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true }}
     >
       <div className={`${Styles.itemsCenter} `}>
         <TitleWithImage title="About" />
@@ -37,7 +37,7 @@ const About = () => {
           variants={zoomIn(0.4, 1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true }}
         >
           <Image
             loading="eager"

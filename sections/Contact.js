@@ -60,7 +60,7 @@ const Contact = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true }}
         onViewportEnter={() => {
           setSelectedPage("Contact");
         }}
@@ -92,7 +92,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter Your Name"
-                className="input  placeholder:text-slate-300"
+                className="input "
                 id="useName"
                 name="userName"
               />
@@ -103,7 +103,7 @@ const Contact = () => {
               </label>
               <input
                 placeholder="Enter Your Email"
-                className="input  placeholder:text-slate-300"
+                className="input "
                 type=" email"
                 id="email"
                 name="email"
@@ -115,13 +115,13 @@ const Contact = () => {
               </label>
               <textarea
                 placeholder="Enter Your Message"
-                className="input h-32 resize-none  placeholder:text-slate-300 rounded-xl "
+                className="input h-32 resize-none  rounded-xl "
                 id="message"
                 name="message"
               />
             </div>
             <button className={`  btn rounded-xl w-[140px]  px-3 py-2`}>
-              <div className={` text-gradient text-center w-full  `}>Send</div>
+             Send
             </button>
           </motion.form>
           <motion.div

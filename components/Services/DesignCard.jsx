@@ -15,11 +15,10 @@ const DesignCard = ({ img, name, behance, dribble, description }) => {
       variants={zoomIn(0.5, 1)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true }}
       className="md:w-[350px] w-full  shadow-md rounded-lg bg-white/90 pb-5 h-auto"
     >
       <div className=" rounded-xl w-full relative h-[300px]   bg-cover ">
-
         <Image
           className="w-full rounded-lg bg-cover h-full "
           src={img}
@@ -57,9 +56,8 @@ const DesignCard = ({ img, name, behance, dribble, description }) => {
 
 export default DesignCard;
 
-    
 {
-       /*     {showDetails && (
+  /*     {showDetails && (
                 <div className="bg-black/40 absolute h-full w-full right-0 top-0">
                   <div className="relative h-full w-full ">
                     <div className=" mx-auto  absolute top-1/2  left-[35%] md:left-[20%]">
@@ -75,4 +73,4 @@ export default DesignCard;
                 </div>
               )}
             </div> */
-     }
+}

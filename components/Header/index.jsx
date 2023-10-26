@@ -27,10 +27,10 @@ const NavBar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={`md:px-md px-x  w-full  h-20    rounded-2xl     fixed top-0  pt-4   z-40 ${
+      viewport={{ once: true }}
+      className={`md:px-md px-x  w-full  h-20    rounded-2xl    fixed -top-1  pt-4   z-40 ${
         showNav &&
-        " drop-shadow-md  border  rounded-xl  shadow-lg duration-500 transition  backdrop-blur-[2rem]"
+        " drop-shadow-md   border-b border-white rounded-xl  shadow-lg duration-500 transition  backdrop-blur-[2rem]"
       }    `}
     >
       <div className={`  flex justify-between items-center   `}>

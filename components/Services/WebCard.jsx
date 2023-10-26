@@ -76,7 +76,7 @@ const WebCard = ({
 
         <motion.div
           variants={rotateVariants(direction)}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true }}
           initial="hidden"
           whileInView="show"
           className={`absolute ${direction}-0  -top-4 lg:top-0  hover:scale-105 -rotate-6 filter   h-[250px]  md:w-[200px] w-[150px] `}
@@ -85,6 +85,8 @@ const WebCard = ({
           <Image
             className="  rotate-6 filter    "
             src={img}
+            loading="eager"
+            priority={true}
             fill={true}
             layout="fill"
             objectFit="contain"

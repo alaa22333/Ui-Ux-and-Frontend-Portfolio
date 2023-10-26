@@ -5,7 +5,7 @@
 
 @layer components {
   * {
-    @apply p-0 m-0;
+    @apply p-0 m-0 transition duration-300;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
@@ -80,7 +80,7 @@
     width: 200px;
   }
   .input {
-    @apply rounded-xl outline-offset-1  outline-main  p-3  h-[40px]  md:min-w-[290px];
+    @apply rounded-lg bg-grey200 outline-offset-1 placeholder:text-grey400 outline-main  p-3  h-[40px]  md:min-w-[290px];
   }
   .service-btn {
     @apply bg-main shadow-lg  font-semibold text-white;

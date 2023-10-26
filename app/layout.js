@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`  bg-[ #b5adb6b3]  dark:bg-black  overflow-x-hidden   pt-28 ${roboto.className}`}
+        className={`   dark:bg-black  overflow-x-hidden   pt-28 ${roboto.className}`}
       >
         <ContextProvider>
           <Providers>

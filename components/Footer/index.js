@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col  gap-4 bg-white/30  py-5 md:px-md px-x">
+    <div className="flex flex-col  gap-7 bg-white/30  py-5 md:px-md px-x">
       {/* above */}
       <div className="flex md:flex-row  items-center w-full flex-col justify-between  gap-6 md:gap-0  ">
         <div className="flex flex-col    md:gap-7 gap-4 ">
           <Image alt="logo" width={140} src={logo} />
-          <p className="text-sm md:text-lg text-grey300 md:w-[80%] w-full">
+          <p className="text-sm md:text-lg dark:text-white text-grey500 md:w-[80%] w-full">
             I like building new things and creating impressive designs and
             develop them into code .I worked on Many projects as a developer
             using most recent Technologies.
@@ -26,7 +26,7 @@ const Footer = () => {
 shadow-sm "
                   target="_blank"
                 >
-                  <item.icon className="text-grey500 text-2xl  hover:text-grey500/50     " />
+                  <item.icon className="text-secondary text-2xl  hover:text-secondary/50     " />
                 </Link>
               );
             })}
@@ -38,7 +38,7 @@ shadow-sm "
               <Link
                 href={ele.hash}
                 key={i}
-                className="tracking-widest my-0  hover:text-main/90 text-sm md:text-lg  hover:underline text-white"
+                className="tracking-widest my-0  hover:text-main/90 text-sm md:text-lg  hover:underline dark:text-white text-grey500"
               >
                 {ele.title}
               </Link>
@@ -50,7 +50,7 @@ shadow-sm "
 
       <div className="flex gap-5 items-center mx-auto w-full text-center justify-evenly">
         <hr className="w-[30%] border-white/40  " />
-        <p className=" text-sm md:text-lg  text-white">
+        <p className=" text-sm md:text-lg  text-grey200">
           © 2023
           <span className=" text-main  w-[40%]  "> Alaa Abdelrasoul.</span> All
           rights reserved.

@@ -21,10 +21,10 @@ function ThemeToggle() {
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       value={theme}
-      className=" fixed bottom-10  right-10 bg-white/10 p-4 hover:backdrop-blur-[.2rem] hover:shadow-none drop-shadow-md backdrop-blur-[4rem] shadow-lg    rounded-full "
+      className=" fixed bottom-10   right-10 bg-white/10 p-4 hover:backdrop-blur-[.2rem] hover:shadow-none drop-shadow-md backdrop-blur-[4rem] shadow-lg    rounded-full "
     >
       {currentTheme === "dark" ? (
-        <BsFillSunFill className="text-white hover:text-main/80  text-2xl md:text-3xl " />
+        <BsFillSunFill className="text-white  hover:text-main/80  text-2xl md:text-3xl " />
       ) : (
         <MdDarkMode className="text-main hover:text-main/80  text-2xl md:text-3xl " />
       )}

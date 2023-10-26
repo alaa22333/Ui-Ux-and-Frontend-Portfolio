@@ -27,7 +27,7 @@ const Hero = () => {
         initial="hidden"
         whileInView="show"
         onViewportEnter={() => setSelectedPage("Home")}
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true }}
         className={`   md:${Styles.itemsBetween}   md:flex-row flex flex-col  md:gap-10  `}
       >
         <motion.div
@@ -113,7 +113,7 @@ const Hero = () => {
         >
           <motion.div
             variants={rotateVariants("right")}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true }}
             initial="hidden"
             whileInView="show"
           >
