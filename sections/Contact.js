@@ -51,7 +51,7 @@ const Contact = () => {
       });
     }
   };
-  console.log(message);
+
   return (
     <section
       className=" md:px-md px-x md:my-32 my-12 scroll-mt-24 "
