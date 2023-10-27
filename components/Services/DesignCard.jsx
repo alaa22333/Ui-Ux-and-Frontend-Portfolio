@@ -36,6 +36,7 @@ const DesignCard = ({ img, name, behance, dribble, description }) => {
 
         <div className="flex justify-center gap-5 items-center">
           <Link
+            target="_blank"
             href={`${behance}`}
             className="hover:text-black/50 text-xl text-black"
           >
@@ -43,6 +44,7 @@ const DesignCard = ({ img, name, behance, dribble, description }) => {
           </Link>
 
           <Link
+            target="_blank"
             href={`${dribble}`}
             className="hover:text-red-600/50 text-red-600"
           >
