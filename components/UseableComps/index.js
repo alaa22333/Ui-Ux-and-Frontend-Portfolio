@@ -45,7 +45,7 @@ export const TitleWithImage = ({
 
       {img && animation && (
         <motion.div
-          className={`absolute   -top-24 ${direction}-0 md:${direction}-[6rem]`}
+          className={`absolute   -top-10 md:-top-24 ${direction}-0 md:${direction}-[6rem]`}
           variants={fadeIn(animation, "tween", 0.6, 1)}
         >
           <Image
