@@ -54,7 +54,7 @@ const Contact = () => {
 
   return (
     <section
-      className=" md:px-md px-x md:my-32 my-12 scroll-mt-24 "
+      className=" md:px-md px-x  mb-20 scroll-mt-24 "
       id="contact"
     >
       <motion.main
@@ -69,7 +69,7 @@ const Contact = () => {
         <TitleWithImage title={"Contact"} />
         <motion.div
           variants={fadeIn("up", "spring", 0.6, 1)}
-          className={` mx-auto mt-20 flex md:justify-between    justify-center  md:p-10 p-4   items-start md:flex-row flex-col-reverse bg-white/20 rounded-xl   relative `}
+          className={` mx-auto mt-10 flex md:justify-between    justify-center  md:p-10 p-4   items-start md:flex-row flex-col-reverse bg-white/20 rounded-xl   relative `}
         >
           {/* leftSide */}
 

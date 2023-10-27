@@ -19,7 +19,7 @@ const Services = () => {
   return (
     <motion.main
       id="services"
-      className={`px-x md:px-md    scroll-mt-40  md:my-32 my-12 `}
+      className={`px-x md:px-md   scroll-m-44  md:my-20 my-12 `}
       viewport={{ once: true }}
     >
       <motion.div
@@ -37,7 +37,7 @@ const Services = () => {
         />
       </motion.div>
       <div
-        className={`md:w-[280px] w-[200px] gap-3 flex md:text-lg text-sm rounded-lg bg-white  my-10 mt-20 mx-auto  `}
+        className={`md:w-[280px] w-[200px] gap-3 flex md:text-lg text-sm rounded-lg bg-white  my-10  mx-auto  `}
       >
         <button
           className={` text-center p-2  font-semibold duration-500 transition ${
@@ -67,7 +67,7 @@ const Services = () => {
       {/* design and develop projects
        */}
       {query === "develop" ? (
-        <div className={` flex  flex-col lg:gap-14 gap-32 my-16`}>
+        <div className={` flex  flex-col lg:gap-14   gap-28 md:mb-20 mb-48 `}>
           {currProjects?.map((ele, i) => {
             return (
               <div key={i}>
@@ -83,7 +83,7 @@ const Services = () => {
       ) : (
         <div
           className="flex justify-center items-center flex-col md:flex-row  md:flex-wrap w-full gap-10 
-         my-10"
+         my-12 mb-20"
         >
           {currProjects?.map((ele, i) => {
             console.log("design");

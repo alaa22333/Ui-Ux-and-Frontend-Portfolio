@@ -20,9 +20,9 @@ const Sponsors = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`md:my-20 my-10  w-full   -skew-y-2 `}
+      className={` my-10  w-full   -skew-y-2 `}
     >
-      <div className="flex  md:justify-evenly justify-center gap-2 md:py-2 py-4 items-center bg-main/10 shadow  w-full mx-auto rounded-xl flex-wrap">
+      <div className="flex  md:justify-evenly justify-center gap-2 md:py-2 py-4 items-center bg-main/10 shadow  w-full mx-auto flex-wrap">
         {images.map((ele, i) => {
           const { img, alt } = ele;
 

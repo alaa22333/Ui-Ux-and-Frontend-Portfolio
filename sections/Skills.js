@@ -20,7 +20,7 @@ const Skills = () => {
       whileInView="show"
       viewport={{ once: true }}
       onViewportEnter={() => setSelectedPage("Skills")}
-      className={`px-x md:px-md scroll-mt-32 md:my-32 my-12 `}
+      className={`px-x md:px-md scroll-mt-32 md:my-20 my-12 `}
     >
       <TitleWithImage
         title={"Skills"}
@@ -30,7 +30,7 @@ const Skills = () => {
       />
 
       <div
-        className={`${Styles.itemsCenter} flex-wrap gap-4 md:gap-6 md:mt-20 mt-10`}
+        className={`${Styles.itemsCenter} flex-wrap gap-4 md:gap-6  mt-10`}
       >
         {skills.map((ele, i) => {
           const { image, skill } = ele;
