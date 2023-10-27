@@ -31,7 +31,7 @@ const Contact = () => {
     try {
       if (response.ok) {
         if (!message || !name || !email) {
-          toast.warning("Please compelete all the fields !", {
+          toast.warning("Please complete all the fields !", {
             position: toast.POSITION.BOTTOM_RIGHT,
           });
         }
@@ -51,6 +51,7 @@ const Contact = () => {
       });
     }
   };
+  console.log(message);
   return (
     <section
       className=" md:px-md px-x md:my-32 my-12 scroll-mt-24 "

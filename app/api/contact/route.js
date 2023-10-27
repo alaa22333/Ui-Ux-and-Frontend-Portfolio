@@ -18,7 +18,7 @@ export async function POST(req) {
 
   const mailOptions = {
     from: user,
-    to: "alaa.ahmed20022002@gmail.com",
+    to: "alaa.ahmed200221@gmail.com",
     replyTo: email,
     subject: `Contact from Submission From ${name}`,
     html: `
@@ -27,13 +27,16 @@ export async function POST(req) {
     <p>Message:${message}</p>
     `,
   };
+
 if(data){
   try {
     await transporter.sendMail(mailOptions);
-    return NextResponse.json({ message: "Message has been sent !", status: 200 });
+   
+    return NextResponse.json({ message: "Message has been sent", status: 200 });
   } catch (err) {
+    console.error(err)
     return NextResponse.json({
-      message: "Message hasn't been sent.Try again !",
+      message: "Message hasn't been sent.Try again!",
       status: 500,
     });
   }
