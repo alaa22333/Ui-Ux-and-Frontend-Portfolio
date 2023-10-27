@@ -80,7 +80,7 @@
     width: 200px;
   }
   .input {
-    @apply rounded-lg bg-grey200 outline-offset-1 placeholder:text-grey400 outline-main  p-3  h-[40px]  md:min-w-[290px];
+    @apply rounded-lg bg-grey200 outline-offset-1 placeholder:text-grey400 outline-main text-black  p-3  h-[40px]  md:min-w-[290px];
   }
   .service-btn {
     @apply bg-main shadow-lg  font-semibold text-white;
