@@ -64,8 +64,8 @@ const Hero = () => {
                 <Link
                   href={
                     "https://drive.google.com/file/d/1vlXlLNUtOOxyqIg-RH6HKELd03Qt9stg/view?usp=sharing"
-                  }
-                  target="_blank"
+                  }  
+                target="_blank"
                   className="  text-sm md:text-lg  "
                 >
                   Download CV
@@ -98,6 +98,7 @@ const Hero = () => {
                 <Link
                   href={href}
                   key={i}
+                  target="_blank"
                   className="bg-white/10 hover:backdrop-blur-[.2rem] hover:shadow-none drop-shadow-md backdrop-blur-[4rem] shadow-lg    rounded-full p-2"
                 >
                   <Icon className=" text-secondary hover:text-secondary/50  text-2xl md:text-3xl " />

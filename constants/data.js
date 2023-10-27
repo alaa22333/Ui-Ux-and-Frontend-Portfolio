@@ -47,7 +47,7 @@ export const links = [
 ];
 
 export const socialIcons = [
-  { icon: BiLogoGmail, href: "alaa.ahmed20022002@gmail.com" },
+  { icon: BiLogoGmail, href:"https://alaa.ahmed20022002@gmail.com" },
   {
     icon: BsDribbble,
     href: "https://dribbble.com/alaa22333",

@@ -52,8 +52,11 @@ shadow-sm "
         <hr className="w-[30%] border-white/40  " />
         <p className=" text-sm md:text-lg  text-grey200">
           © 2023
-          <span className=" text-main/80 font-semibold  w-[40%]  "> Alaa Abdelrasoul.</span> All
-          rights reserved.
+          <span className=" text-main/80 font-semibold  w-[40%]  ">
+            {" "}
+            Alaa Abdelrasoul.
+          </span>{" "}
+          All rights reserved.
         </p>
         <hr className="w-[30%]  border-white/40 " />
       </div>
