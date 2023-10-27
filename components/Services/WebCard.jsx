@@ -23,6 +23,7 @@ const WebCard = ({
       variants={navVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className={` w-full `}
     >
       {/* project part */}
@@ -32,7 +33,7 @@ const WebCard = ({
         <div className={`main-gradient ${oppDirection}-0 top-0 `} />
 
         <div
-          className={`bg-white/70 absolute  flex flex-col justify-evenly py-4  px-6  z-100 w-[90%] lg:w-[70%]    h-full ${
+          className={`bg-white/70  dark:bg-white absolute  flex flex-col justify-evenly py-4  px-6  z-100 w-[90%] lg:w-[70%]    h-full ${
             oppDirection === "left"
               ? "lg:left-[10rem] left-[1rem] "
               : "lg:left-[10rem]  left-[1rem]"
