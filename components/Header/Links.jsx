@@ -7,6 +7,8 @@ import { useMainContext } from "@/context/main-context";
 const Links = () => {
   const { selectedPage, setSelectedPage, isOpen, setIsOpen } = useMainContext();
   const isMatch = useMediaQuery("(min-width:1000)");
+            console.log(selectedPage);
+
   return links.map((item, i) => {
     const { title, icon: Icon,hash } = item;
     return (

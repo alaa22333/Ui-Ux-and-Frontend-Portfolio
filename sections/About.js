@@ -17,7 +17,7 @@ const About = () => {
   const { setSelectedPage } = useMainContext();
   return (
     <motion.main
-      className={`px-x md:px-md md:my-20 my-12 scroll-mt-20 `}
+      className={`px-x md:px-md md:my-24 my-12  scroll-mt-20 `}
       id="about"
       variants={staggerContainer}
       initial="hidden"

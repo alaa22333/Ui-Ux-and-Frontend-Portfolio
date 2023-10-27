@@ -19,6 +19,7 @@ const Hero = () => {
       id="home"
       className={`px-x md:px-md 
   pt-10 
+  
      md:scroll-mt-20
     `}
     >
@@ -64,8 +65,8 @@ const Hero = () => {
                 <Link
                   href={
                     "https://drive.google.com/file/d/1vlXlLNUtOOxyqIg-RH6HKELd03Qt9stg/view?usp=sharing"
-                  }  
-                target="_blank"
+                  }
+                  target="_blank"
                   className="  text-sm md:text-lg  "
                 >
                   Download CV
@@ -88,9 +89,7 @@ const Hero = () => {
               alt="arrow"
             ></Image>
           </div>
-          <div
-            className={`${Styles.itemsBetween}  mt-5  md:gap-6 gap-4 `}
-          >
+          <div className={`${Styles.itemsBetween}  mt-5  md:gap-6 gap-4 `}>
             {socialIcons.map((item, i) => {
               const { icon: Icon, href } = item;
 
