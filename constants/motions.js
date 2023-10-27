@@ -25,8 +25,9 @@ export const sideBarVariants = {
  
     hidden: {
       opacity: 0,
-      x: 50,
+      x: 300,
       transition: {
+        
         type: "tween",
         stiffness: 300,
         damping: 140,
