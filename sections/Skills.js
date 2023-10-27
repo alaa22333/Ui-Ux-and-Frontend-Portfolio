@@ -30,7 +30,7 @@ const Skills = () => {
       />
 
       <div
-        className={`${Styles.itemsCenter} flex-wrap gap-4 md:gap-6  mt-10`}
+        className={`${Styles.itemsCenter} flex-wrap gap-2 md:gap-6  mt-10`}
       >
         {skills.map((ele, i) => {
           const { image, skill } = ele;
