@@ -12,7 +12,7 @@ import { projects } from "@/constants/data";
 
 const Services = () => {
   const [currProjects, setCurrProjects] = useState(projects.design);
-  const [query, setQuery] = useState("design");
+  const [query, setQuery] = useState<string>("design");
 
   const { setSelectedPage } = useMainContext();
 

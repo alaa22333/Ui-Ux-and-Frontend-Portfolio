@@ -13,11 +13,11 @@ import { useMainContext } from "@/context/main-context";
 
 const Contact = () => {
   const { setSelectedPage } = useMainContext();
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
-    let email = e.target.email.value;
-    let name = e.target.userName.value;
-    let message = e.target.message.value;
+ let email = String(e.target.email.value);
+ let name = String(e.target.userName.value);
+ let message = String(e.target.message.value);
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {

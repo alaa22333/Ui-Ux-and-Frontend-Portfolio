@@ -2,8 +2,17 @@ import { fadeIn, textContainer, textVariant2 } from "@/constants/motions";
 import Styles from "@/app/styles/styles";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ThemeProvider } from "next-themes";
-export const TitleText = ({ title, textStyles }) => {
+type TextProps = {
+  title: String;
+  textStyles: String;
+};
+type TitleProps = {
+  title: String;
+  direction?: string;
+  img?: SVGAElement;
+  animation?: string;
+};
+export const TitleText = ({ title, textStyles }: TextProps) => {
   return (
     <motion.h2
       variants={textVariant2}
@@ -15,7 +24,7 @@ export const TitleText = ({ title, textStyles }) => {
     </motion.h2>
   );
 };
-export const TypingText = ({ title, textStyles }) => {
+export const TypingText = ({ title, textStyles }: TextProps) => {
   return (
     <motion.p variants={textContainer} className={`${textStyles}  `}>
       {Array.from(title).map((letter, i) => (
@@ -32,7 +41,7 @@ export const TitleWithImage = ({
   direction,
   img,
   animation,
-}) => {
+}: TitleProps) => {
   return (
     <div className={`${Styles.itemsCenter} relative `}>
       <TypingText
@@ -45,20 +54,16 @@ export const TitleWithImage = ({
 
       {img && animation && (
         <motion.div
-          className={`absolute   -top-10 md:-top-24 ${direction}-0 md:${direction}-[6rem]`}
+          className={`absolute  -top-15 ${direction}-0 md:${direction}-[6rem]`}
           variants={fadeIn(animation, "tween", 0.6, 1)}
         >
           <Image
-            src={img }
-            alt={title }
-            className=" md:w-[220px] sm:w-[150px] w-[100px]"
+            src={(img as SVGAElement) || String}
+            alt={title as string}
+            className="lg:w-[300px] md:w-[220px] sm:w-[150px] w-[80px]"
           />
         </motion.div>
       )}
     </div>
   );
 };
-
-
-
-

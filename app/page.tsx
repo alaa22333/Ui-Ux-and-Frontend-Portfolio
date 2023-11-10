@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
-// import Services from "@/sections/Services";
 import Skills from "@/sections/Skills";
 import Sponsors from "@/sections/Sponsors";
 import Services from '@/sections/Services';

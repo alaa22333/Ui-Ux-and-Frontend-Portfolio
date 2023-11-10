@@ -1,9 +1,8 @@
 import { SiGmail } from "react-icons/si";
 import { MdLocationOn } from "react-icons/md";
-
 import { FaUserAlt } from "react-icons/fa";
 import { IoMdCreate } from "react-icons/io";
-import { BiLogoGmail, BiLogoFacebook } from "react-icons/bi";
+import { BiLogoGmail} from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import github from "@/public/assets/github.svg";
@@ -61,7 +60,7 @@ export const socialIcons = [
     icon: FaLinkedinIn,
     href: "https://www.linkedin.com/in/alaa-ahmed-852865214",
   },
-];
+] as const;
 export const aboutInfo = [
   { icon: MdLocationOn, text: "Alexandria, Egypt" },
   { icon: BsFillTelephoneFill, text: "+201286747743" },
@@ -84,7 +83,7 @@ export const skills = [
   { skill: "git", image: git },
   { skill: "github", image: github },
   { skill: "canva2", image: canva2 },
-];
+] as const;
 
 export const projects = {
   develop: [
@@ -194,5 +193,5 @@ export const projects = {
         "https://dribbble.com/shots/22434855-fitness-landing-page-with-figma?utm_source=Clipboard_Shot&utm_campaign=alaa22333&utm_content=fitness%20landing%20page%20with%20figma&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=alaa22333&utm_content=fitness%20landing%20page%20with%20figma&utm_medium=Social_Share",
     },
   ],
-};
+} as const;
 

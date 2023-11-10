@@ -1,15 +1,17 @@
 "use client";
+import { ChildrenProps, ComponentProps, Section } from "@/shared/types";
+
 import React, { createContext, useContext, useState } from "react";
  
 
 
-const MainContext = createContext(null );
+const MainContext = createContext < ComponentProps | null > (null);
 
 
-export default function ContextProvider({ children }) {
-  const [showNav, setShowNav] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedPage, setSelectedPage] = useState('Home');
+export default function ContextProvider({ children } :ChildrenProps) {
+  const [showNav, setShowNav] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedPage, setSelectedPage] = useState<Section>("Home");
 
   return (
     <MainContext.Provider

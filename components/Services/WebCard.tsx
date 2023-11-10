@@ -8,6 +8,8 @@ import { navVariants, rotateVariants } from "@/constants/motions";
 import { AiFillGithub } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
+import { WebProps } from "@/shared/types";
+
 const WebCard = ({
   img,
   url,
@@ -17,7 +19,7 @@ const WebCard = ({
   description,
   direction,
   oppDirection,
-}) => {
+}: WebProps) => {
   return (
     <motion.div
       variants={navVariants}

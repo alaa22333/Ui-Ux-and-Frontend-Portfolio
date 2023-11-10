@@ -12,16 +12,18 @@ import { useMainContext } from "@/context/main-context";
 import Link from "next/link";
 
 const NavBar = () => {
-  const { showNav, setShowNav, isOpen, setIsOpen } = useMainContext();
+  const { showNav, setShowNav, isOpen, setIsOpen } =
+    useMainContext() ;
 
   const isMatch = useMediaQuery("(min-width: 600px)");
   useEffect(() => {
-    const scrollEvent = window.addEventListener("scroll", () => {
+    const scrollEvent: () => void = window.addEventListener("scroll", () => {
       const height = window.pageYOffset;
       height >= 400 ? setShowNav(true) : setShowNav(false);
     });
     return () => window.removeEventListener("scroll", scrollEvent);
   });
+
   return (
     <motion.div
       variants={navVariants}

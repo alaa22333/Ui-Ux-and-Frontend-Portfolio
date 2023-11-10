@@ -6,8 +6,15 @@ import { BsBehance, BsDribbble } from "react-icons/bs";
 
 import Link from "next/link";
 import { zoomIn } from "@/constants/motions";
+import { DesignProps } from "@/shared/types";
 
-const DesignCard = ({ img, name, behance, dribble, description }) => {
+const DesignCard = ({
+  img,
+  name,
+  behance,
+  dribble,
+  description,
+}: DesignProps) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (

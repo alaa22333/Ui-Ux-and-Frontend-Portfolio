@@ -13,7 +13,7 @@ const Sponsors = () => {
     { img: fiverr, alt: "fiverr" },
     { img: behance, alt: "behance" },
     { img: dribble, alt: "dribble" },
-  ];
+  ] as const;
   return (
     <motion.div
       variants={staggerContainer}

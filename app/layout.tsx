@@ -1,5 +1,6 @@
 import "./styles/globals.css";
-import { Roboto } from "next/font/google";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import ContextProvider from "@/context/main-context";
 import NavBar from "@/components/Header";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -7,12 +8,12 @@ import { Suspense } from "react";
 import Loading from "./loading";
 import Providers from "./Providers";
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
+const inter = Inter({
+  weight: "400",
+  subsets: ["latin"],
+});
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Alaa",
   icons: {
     icon: "/icon.svg",
@@ -20,7 +21,11 @@ export const metadata = {
   description: "Ui / Ux designer & frontend Developer",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -28,7 +33,7 @@ export default function RootLayout({ children }) {
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`   dark:bg-black overflow-x-hidden   pt-28 ${roboto.className}`}
+        className={`   dark:bg-black overflow-x-hidden   pt-28 ${inter.className}`}
       >
         <ContextProvider>
           <Providers>
